@@ -2,19 +2,25 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Random Car Showcase</title>
+  <title>Car Order and Showcase</title>
   <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Domine:wght@400..700&family=DynaPuff:wght@400..700&family=Edu+NSW+ACT+Cursive:wght@400..700&family=Great+Vibes&family=Imperial+Script&family=Montserrat:ital,wght@0,100..900;1,10
+    0..900&family=Orbitron:wght@400..900&family=Oswald:wght@200..700&family=Playwrite+DE+LA+Guides&display=swap" rel="stylesheet">
 </head>
+<header>SpotOn Automotives</header>
 <body class="bg-blue p-4">
+<img src="ferrari.jpeg" alt="Tributo" title="Ferrari Tributo">
+<img src="swatsika.png" alt="Swatsika" class="icon">
   <h1 class="text-center text-blue mb-4">Random Car Showcase</h1>
   
   <div class="grid-2 mb-4">
+
     <div>
-      <h2 class="text-blue">Car List</h2>
-      <ul id="car-list" class="fade-in card p-2 rounded"></ul>
-    </div>
-    <div>
-      <h2 class="text-blue">Add a Car</h2>
+        <p>Thank you for visiting SpotOn car showcase, please enter the input of the car of your choice and <span id="text">you'll get a delivery
+            with less than a week</span></p>
+      <h2 class="text-blue">Please select your car</h2>
       <form id="car-form" class="card p-2 rounded">
         <div class="form-group">
           <label class="form-label" for="brand">Brand</label>
@@ -30,10 +36,14 @@
         </div>
         <button type="submit" class="btn-primary mt-2">Add Car</button>
       </form>
+        <div>
+        <h2 class="text-blue">Car List</h2>
+        <ul id="car-list" class="fade-in card p-2 rounded"></ul>
+    </div>
     </div>
   </div>
 
-  <!-- Modal for feedback -->
+
   <div id="modal" class="modal">
     <div class="modal-content text-center">
       <span id="modal-message"></span>
